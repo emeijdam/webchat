@@ -9,20 +9,15 @@
 <body>
     <h1>HTML Skeleton</h1>
     <p>Content</p>
-    <div id="web_chat_container"></div>
-    
-    <!-- Load React. -->
-    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
 
     <script>
         window.webChatOptions = {
+          render: true,
           themeColor: "#000000"
           };
         setTimeout(function(){
           const t=document.createElement('script');
-          t.src="/dist/dasc_chat.js";
+          t.src="/dist/bundle.js";
           document.body.appendChild(t);
         });
       </script>

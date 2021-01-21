@@ -6,6 +6,7 @@
   "scripts": {
     "build": "webpack --mode=production",
     "buid-test": "webpack --mode=development",
+    "webstart": "webpack serve --port 8080 --config webpack.config.js --mode=development",
     "start": "http-server"
   },
   "keywords": [],
@@ -20,10 +21,10 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "webpack": "^5.14.0",
-    "webpack-cli": "^4.3.1"
+    "webpack-cli": "^4.3.1",
+    "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
-    "@fingerprintjs/fingerprintjs": "^3.0.5",
     "react-slack-chat": "^1.15.0"
   }
 }

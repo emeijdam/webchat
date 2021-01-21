@@ -1,7 +1,12 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/dasc_chat.js',
+  mode: 'development',
+  entry: './src/react_loader.js',
+  externals: {
+    'react': 'React', // Case matters here 
+    'react-dom' : 'ReactDOM' // Case matters here 
+   },
   module: {
     rules: [
       //Allows use javascript
@@ -19,6 +24,6 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'dasc_chat.js',
-  },
+    filename: 'bundle.js',
+  }
 };
